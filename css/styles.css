@@ -83,7 +83,7 @@ margin-right: 76px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: #404bbf;
     padding-top: 24px;
     padding-bottom: 24px; 
     display: inline-block;
@@ -96,7 +96,7 @@ margin-right: 76px;
 }
 /* подчеркивание ссылки */
 .current::after {
-    content:" ";
+    content: "";
     position:absolute;
     left: 0;
     bottom: -1px;
@@ -209,6 +209,16 @@ background-color: #404bbf;
     width: calc((100% - 72px) / 4);
 }
 
+.benefits-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
+}
 .benefits-title {
     font-weight: 700;
     font-size: 36px;
@@ -256,10 +266,11 @@ margin-bottom: 72px;
 .team-list-item 
 {background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46.47.66.0.08);
        }
 
 .container-name {
-padding: 32px 16px;
+padding: 32px 0;
 }
 .team-list-name {
 font-weight: 500;
@@ -284,6 +295,7 @@ margin-bottom: 8px;
     display: flex;
     gap: 24px;
     margin-top: 0;
+    justify-content: center;
     
 }
 .item-icons {
@@ -292,7 +304,10 @@ margin-bottom: 8px;
 .icon-lin {
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
+    border-radius: 50%;
+        --bg-team-color:#4d5ae5;
+    background-color:var(--bg-team-color);
 
 }
 
@@ -333,6 +348,7 @@ margin-bottom: 72px;
    width: calc((100% - 48px) / 3);
    position: relative;
    box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item-block {
@@ -389,10 +405,16 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #434455;
-padding-left: 16px;
-position: absolute
+--paragraf-color: #f4f4fd;
+color: var(--paragraf-color);
+padding: 40px 32px;
+background-color: #4d5ae5;
+position: absolute;
 top:0;
+height: 100%;
+width: 100%;
+transform: translateY(100%);
+
 }
 /* #endregion Our portfolio */
 /* #region footer */
