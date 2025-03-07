@@ -315,8 +315,8 @@ margin-bottom: 8px;
     
 }
 
-.icon-lin:hover .icon,
-.icon-lin:focus .icon {
+.icon-lin:hover,
+.icon-lin:focus {
     background-color: #404bbf;
 }
 
