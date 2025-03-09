@@ -488,7 +488,6 @@ margin-bottom: 16px;
     letter-spacing: 0.02em;
     --color: #FFFFFF;
     color: var(--color);
-    margin-top: 30px;
     margin-bottom: 16px;
 
 }
@@ -496,14 +495,13 @@ margin-bottom: 16px;
 .footer-list {
     display: flex;
     gap: 16px;
-    margin-top: 16px;
 }
    
 .icon-footer-lin {
 width: 100%;
 height: 100%;
---bg-color:#4d5ae5;
-background-color:var(--bg-color);
+/*--bg-color:#4d5ae5;*/
+background-color:var(--icon-color);
 border-radius: 50%;
 display:flex;
 align-items: center;
@@ -511,8 +509,8 @@ justify-content: center;
 transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-footer-lin,
-.icon-footer-lin {
+.icon-footer-lin:hover,
+.icon-footer-lin:focus {
    background-color: #31d0aa;
 }
 
