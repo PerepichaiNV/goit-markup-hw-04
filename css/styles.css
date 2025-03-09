@@ -83,7 +83,7 @@ margin-right: 76px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #404bbf;
+    color: #2e2f42;
     padding-top: 24px;
     padding-bottom: 24px; 
     display: inline-block;
@@ -93,11 +93,13 @@ margin-right: 76px;
 
 .item-nav-link:hover,
 .item-nav-link:focus {
-    color: #2e2f42;
+    
+    color: #404bbf;
     }
 
 .current {
-    color: #2e2f42;
+    
+    color: #404bbf;
 }
 /* подчеркивание ссылки */
 .current::after {
